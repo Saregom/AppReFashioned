@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(235, 237, 241);
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    /* background-color: aqua; */
+}
+
+.inp-login{
+    width: 150px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.inp-btn{
+    width: 160px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightblue;
+    border-style: none;
+}

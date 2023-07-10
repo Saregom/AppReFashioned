@@ -1,3 +1,3 @@
 # AppReFashioned
-## Ejecutar flask
-flask --app main --debug run
+## Ejecutar flask:
+### `flask --app main --debug run`

@@ -2,15 +2,33 @@
 *{
     box-sizing: border-box;
 }
-body{
-    padding: 10px;
+.content{
+    padding: 20px;
+}
+
+/* --------------- NAVBAR --------------- */
+.app-nav-container{
+    height: 50px;
+    background-color: lightskyblue; 
+    display: flex;
+}
+.app-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.app-nav img{
+    height: 45px;
+}
+.app-nav a{
+    text-decoration: none;
+    color: black;
+}
+.app-nav .nav-count{
+    margin-left: auto;
 }
 
 /* --------------- LOGIN, SIGNIN --------------- */
-h1{
-    text-align: center;
-    padding: 20px;
-}
 .logo_ReFashioned{
     width: 100%;
     max-width: 250px;
@@ -24,11 +42,14 @@ h1{
     border-radius: 10px;
     margin: auto;
     text-align: center;
-    border: 1px solid rgb(105, 105, 105);
+    box-shadow: 0px 0px 15px 0px rgb(180, 180, 180);
 }
 .container-signin{
     width: 100%;
     max-width: 450px;
+}
+.container-login p, .container-signin p{
+    font-size: 23px;
 }
 .container-login input, .container-login button,
 .container-signin input, .container-signin button{
@@ -40,10 +61,9 @@ h1{
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 .container-login .inp-btn, .container-signin .inp-btn{
-    font-size: 20px;
+    font-size: 18px;
     border: 0;
     border-radius: 5px;
-    
 }
 .container-login .btn-blue, .container-signin .btn-blue{
     background-color: lightskyblue;
@@ -54,4 +74,6 @@ h1{
 button a{
     text-decoration: none;
     color: black;
+    width: 100%;
+    display: block;
 }

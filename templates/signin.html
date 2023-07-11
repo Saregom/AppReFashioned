@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-{% block title%} Signin {%endblock%}
+{% block title %} Login {% endblock %}
 
-{% block content%} 
+{% block content %} 
     <img class="logo_ReFashioned" src="/static/img/logo_ReFashioned_v2.jpg" alt="">
     <div class="container-signin">
-    <h3>Signin</h3>
+    <p>Nueva cuenta</p>
         <form action="">
             <div class="row">
                 <div class="col">
@@ -62,7 +62,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="inp-btn btn-green"><a href="{{url_for('login')}}">Ya tengo una cuenta</a></button> <!-- Cambiar link -->
+                    <button class="inp-btn btn-green" type="button"><a href="{{url_for('login')}}">Ya tengo una cuenta</a></button>
                 </div>
             </div>
         </form>

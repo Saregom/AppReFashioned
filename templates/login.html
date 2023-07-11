@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
-{% block title%} Login {%endblock%}
+{% block title %} Login {% endblock %}
 
-{% block content%} 
-    <img class="logo_ReFashioned" src="/static/img/logo_ReFashioned_v2.jpg" alt="">
+{% block content %} 
+    <img class="logo_ReFashioned" src="/static/img/logo_Refashioned_v2.jpg" alt="">
     <div class="container-login">
-        <h3>Login</h3>
-        <form action="">
+        <p>Iniciar sesion</p>
+        <form action="", method="post">
             <div class="row">
                 <div class="col">
                     <input class="inp-login" type="text" name="user" placeholder="Usuario">
@@ -24,7 +24,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="inp-btn btn-green"><a href="{{url_for('signin')}}">Crear cuenta</a></button>
+                    <button class="inp-btn btn-green" type="button"><a href="{{url_for('signin')}}">Crear cuenta</a></button>
                 </div>
             </div>
         </form>

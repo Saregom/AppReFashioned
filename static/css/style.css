@@ -2,30 +2,68 @@
 *{
     box-sizing: border-box;
 }
-.content{
+.container-content{
     padding: 20px;
 }
 
 /* --------------- NAVBAR --------------- */
-.app-nav-container{
-    height: 50px;
-    background-color: lightskyblue; 
-    display: flex;
+.container-page-nav{
+    height: 80px;
+    background-color: rgb(197, 202, 255); 
 }
-.app-nav{
+.page-nav{
     display: flex;
     align-items: center;
-    gap: 20px;
+    height: 80px;
+    gap: 25px;
+    padding: 0 20px;
 }
-.app-nav img{
-    height: 45px;
+.page-nav img{
+    height: 70px;
 }
-.app-nav a{
+.page-nav a{
     text-decoration: none;
     color: black;
 }
-.app-nav .nav-count{
+.page-nav .nav-account{
     margin-left: auto;
+}
+
+/* --------------- HOME --------------- */
+.page-nav, .container-content, .div-portada{
+    margin: auto;
+}
+.page-nav, .img-portada{
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px){
+    .page-nav, .container-content, .div-portada{
+        max-width: 1500px;
+    }
+}
+
+/* --------------- PRODUCTS --------------- */
+.container-page{
+    display: flex;
+}
+.aside-left{
+    width: 20%;
+    /* height: 100vh; */
+    max-height: 100vh;
+    
+}
+.main-page{
+    padding-left: 20px;
+    width: 80%;
+}
+.producto{
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    padding: 20px;
+}
+.producto p{
+    margin: 0;
 }
 
 /* --------------- LOGIN, SIGNIN --------------- */

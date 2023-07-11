@@ -1,0 +1,48 @@
+{% extends 'home.html' %}
+{% block title %} Login {% endblock %}
+
+{% block front_page %}
+{% endblock %}
+
+{% block content %} 
+    <div class="container-page">
+        <aside class="aside-left">
+            <h4>Filtros</h4>
+            <h6>Precio</h6>
+                <input type="number" name="" id="" placeholder="Min">
+                <input type="number" name="" id="" placeholder="Max">
+            <h6>Talla</h6>
+                <div>
+                    <input type="checkbox" name="talla" id=""> <label for="S">S</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="talla" id=""> <label for="M">M</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="talla" id=""> <label for="L">L</label>
+                </div>
+            <h6>Cateoria</h6>
+            <div>
+                <input type="checkbox" name="cateoria" id=""> <label for="pantalones">Pantalones</label>
+            </div>
+            <div>
+                <input type="checkbox" name="cateoria" id=""> <label for="camisas">Camisas</label>
+            </div>
+            <div>
+                <input type="checkbox" name="cateoria" id=""> <label for="zapatos">Zapatos</label>
+            </div>
+        </aside>
+
+        <main class="main-page">
+            <h3>Productos</h3>
+            <div class="div-productos">
+                {% for product in products %}
+                    <div class="producto">
+                        <p>Nombre: {{product.Nombre}}</p>
+                        <p>Precio: {{product.Precio}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </main>
+    </div>
+{% endblock %}

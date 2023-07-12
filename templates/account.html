@@ -1,0 +1,56 @@
+{% extends 'home.html' %}
+{% block title %} Cuenta {% endblock %}
+
+{% block front_page %}
+{% endblock %}
+
+{% block content %} 
+    <div class='body-profile'>
+        <div class='cont-profile'>
+            <div class='div-avatar-father'>
+                <div class='div-avatar'>
+                    <img class='avatar' src='static/img/avatar.png' alt='Profile'></img>
+                </div> 
+            </div>
+            <div class='profile-info'>
+                <div class='profile-head'>
+                    <p class='name-profile'>{nombre}</p>
+                    <label>{Correo}</label>
+                    <hr/>
+                </div>
+                <div class='profile-body'>
+                    <div class='row row-cols-2'>
+                        <div class='col'>
+                            <label class='th'>Identificación</label>
+                        </div>
+                        <div class='col'>
+                            <label>{user.identification}</label>
+                        </div>
+                        <div class='col'>
+                            <label class='th'>Dirección</label>
+                        </div>
+                        <div class='col'>
+                            <label>{birthtDayFormat()}</label>
+                        </div>
+                        <div class='col'>
+                            <label class='th'>Ciudad</label>
+                        </div>
+                        <div class='col'>
+                            <label>{user.email}</label>
+                        </div>
+                        <div class='col'>
+                            <label class='th'>Num. Telefono</label>
+                        </div>
+                        <div class='col'>
+                            <label>{user.cellPhone}</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='profile-footer'>
+                    <a class="txt" href="/"><button class="btn-profile btn-logout">Salir</button></a>
+                    <a class="txt" href="/update-account"><button class="btn-profile btn-home">Actualizar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

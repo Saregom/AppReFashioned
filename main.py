@@ -31,5 +31,26 @@ def products():
 
     return render_template('products.html', products = products)
 
+@app.route('/orders')
+def orders():
+    orders = [{'IdPedido':234, 'Total':50000, 'Fecha':'2023/07/11',
+               'Productos':[
+                    {'Nombre':'Pantalon', 'Precio':50000}, 
+                    {'Nombre':'Camisa', 'Precio':20000}]
+            }]
+    
+    return render_template('orders.html', orders = orders)
+
+@app.route('/account')
+def account():
+    return render_template('account.html')
+
+@app.route('/update-account', methods=['GET', 'POST'])
+def updateAccount():
+    if request.method == 'POST':
+        return redirect(url_for('account'))
+    
+    return render_template('updateAccount.html')
+
 if __name__ == '__main__':
     app.run()

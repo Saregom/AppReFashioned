@@ -2,9 +2,9 @@
 {% block title %} Login {% endblock %}
 
 {% block content %} 
-    <img class="logo_ReFashioned" src="/static/img/logo_ReFashioned_v2.jpg" alt="">
+    <img class="logo_ReFashioned" src="/static/img/logo_ReFashioned_v2_733.png" alt="">
     <div class="container-signin">
-    <p>Nueva cuenta</p>
+        <p>Nueva cuenta</p>
         <form action="", method="post">
             <div class="row">
                 <div class="col">
@@ -57,12 +57,12 @@
 
             <div class="row">
                 <div class="col">
-                    <input class="inp-btn btn-blue" type="submit" value="Registrarme">
+                    <input class="inp-btn btn-green" type="submit" value="Registrarme">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="inp-btn btn-green" type="button"><a href="{{url_for('login')}}">Ya tengo una cuenta</a></button>
+                    <a href="{{url_for('login')}}"><button class="inp-btn btn-blue" type="button">Ya tengo una cuenta</button></a>
                 </div>
             </div>
         </form>

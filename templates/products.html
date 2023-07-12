@@ -1,5 +1,5 @@
 {% extends 'home.html' %}
-{% block title %} Login {% endblock %}
+{% block title %} Products {% endblock %}
 
 {% block front_page %}
 {% endblock %}
@@ -35,9 +35,9 @@
 
         <main class="main-page">
             <h3>Productos</h3>
-            <div class="div-productos">
+            <div class="div-products">
                 {% for product in products %}
-                    <div class="producto">
+                    <div class="product">
                         <p>Nombre: {{product.Nombre}}</p>
                         <p>Precio: {{product.Precio}}</p>
                     </div>

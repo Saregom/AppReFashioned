@@ -14,40 +14,40 @@
             </div>
             <div class='profile-info'>
                 <div class='profile-head'>
-                    <p class='name-profile'>{nombre}</p>
-                    <label>{Correo}</label>
+                    <p class='name-profile'>{{user.nombre_persona}}</p>
+                    <label>{{user.tipo_persona}}</label>
                     <hr/>
                 </div>
                 <div class='profile-body'>
                     <div class='row row-cols-2'>
                         <div class='col'>
-                            <label class='th'>Identificación</label>
+                            <label class='th'>Correo</label>
                         </div>
                         <div class='col'>
-                            <label>{user.identification}</label>
+                            <label>{{user.correo_persona}}</label>
+                        </div>
+                        <div class='col'>
+                            <label class='th'>Pais - ciudad</label>
+                        </div>
+                        <div class='col'>
+                            <label>{{adress.pais}} - {{adress.ciudad}}</label>
                         </div>
                         <div class='col'>
                             <label class='th'>Dirección</label>
                         </div>
                         <div class='col'>
-                            <label>{birthtDayFormat()}</label>
-                        </div>
-                        <div class='col'>
-                            <label class='th'>Ciudad</label>
-                        </div>
-                        <div class='col'>
-                            <label>{user.email}</label>
+                            <label>{{adress.direccion}}</label>
                         </div>
                         <div class='col'>
                             <label class='th'>Num. Telefono</label>
                         </div>
                         <div class='col'>
-                            <label>{user.cellPhone}</label>
+                            <label>{{user.numero_telefonico}}</label>
                         </div>
                     </div>
                 </div>
                 <div class='profile-footer'>
-                    <a class="txt" href="/"><button class="btn-profile btn-logout">Salir</button></a>
+                    <a class="txt" href="/logout"><button class="btn-profile btn-logout">Salir</button></a>
                     <a class="txt" href="/update-account"><button class="btn-profile btn-home">Actualizar</button></a>
                 </div>
             </div>

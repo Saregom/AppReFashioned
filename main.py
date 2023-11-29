@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, redirect, request, session, jsonify
+import os
 from config import config
 from db.db_connection import create_tables
 import db.db_controller as db_controller
@@ -7,8 +8,9 @@ from datetime import date
 from datetime import timedelta
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'super secret key'
 
-@app.route('/')
+@app.route('/') 
 def index():
     return redirect('/login')
 
@@ -229,5 +231,5 @@ def logout():
 
 if __name__ == '__main__':
     create_tables()
-    app.config.from_object(config['development'])
+    # app.config.from_object(config['development'])
     app.run(debug=True)
